@@ -117,8 +117,8 @@ body{
         gap: 1rem;  
     }
 
-    #mode1,
-    #mode2 {
+    #friend,
+    #computer {
         font-size: 1.5rem; 
         padding: 0.5rem;
         line-height: 2.5rem;
