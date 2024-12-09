@@ -137,4 +137,8 @@ body{
     h1 {
         font-size: 1.8rem;  
     }
+    .msg-container{
+        height: 100vh;   
+    }
+    
 }
