@@ -1,4 +1,4 @@
- 
+
     const boxes = document.querySelectorAll(".box");
     const resetBtn = document.querySelector("#reset-btn");
     const newGameBtn = document.querySelector("#new-btn");
@@ -7,6 +7,7 @@
 
     let turnX = true;  
     let count = 0;  
+    //win pattern are stored in an array
     const winPattern = [
         [0, 1, 2],
         [3, 4, 5],
@@ -101,8 +102,7 @@
             for (let combination of winPattern) {
                 const [a, b, c] = combination;
 
-                if (
-                    boxes[a].innerText === "X" && boxes[b].innerText === "X" && !boxes[c].innerText) {
+                if (boxes[a].innerText === "X" && boxes[b].innerText === "X" && !boxes[c].innerText) {
                     boxes[c].innerText = "O";
                     boxes[c].disabled = true;
                     return true;  
